@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Decorated example</h1>
+</body>
+<script type="text/template" id="basic-template">
+   child's mother name: <%= lazyAttr('mother.name',function(value){
+    return '<b>'+value+'</b>'
+    }) %>
+</script>
+
+
+
+<script src="./../lib/jquery-1.9.1.js"></script>
+<script src="./../lib/underscore.js"></script>
+<script src="./../lib/backbone.js"></script>
+<script src="./../lib/metamorph.js"></script>
+<script src="./../lib/backbone.marionette.js"></script>
+<script src="./../backbone.metamorph.js"></script>
+<script src="./basic.js"></script>
+</html>
